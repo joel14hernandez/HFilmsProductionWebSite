@@ -1,0 +1,471 @@
+/* 
+    Document   : firststyle
+    Created on : Oct 15, 2014, 2:09:47 PM
+    Author     : Joel hernandez
+    Description:
+        Website style.
+*/
+html{
+    font-family: 'Rosario',sans-serif;
+        background-color: #EBEBEB;
+}
+
+
+body{
+     max-width:3000px;  
+    
+}
+#body2{
+    margin-left: 13em;
+    bottom:0px;
+}
+#bodyHome{
+    margin-left: 13em;
+    -webkit-column-count: 5; /* Chrome, Safari, Opera */
+    -moz-column-count: 5; /* Firefox */
+    column-count: 5;
+}
+#about{
+    margin-left: 13em;
+}
+.photos{
+        -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3; 
+    
+}
+
+.videos{
+        -webkit-column-count: 1; /* Chrome, Safari, Opera */
+    -moz-column-count: 1; /* Firefox */
+    column-count: 1; 
+}
+nav{
+    font-family: 'Roboto', sans-serif;
+    top: 0px;
+        background-color: white;
+   height: 100%;
+   color: whitesmoke;
+   width:13em;
+   left:0px;
+   float:left;
+   position: fixed;
+   display:block;
+   box-shadow: 5px 5px 5px #888888;
+}
+#medias img{
+    height:23px;
+    width:23px;
+    opacity:.60;
+}
+#medias img:hover{
+    opacity:1;
+    box-shadow:3px 3px 3px dimgray;
+}
+#medias ul li{
+    display:inline;
+}
+
+#video {
+	width:640px;
+	height:360px;
+}
+a:link{
+       color: #4D4D4D;
+       text-decoration: none;
+}
+a:hover{
+        font-weight:bold;
+}
+a:active{
+        font-weight:bold;
+        color:white;
+}
+
+a:visited{
+        font-weight:bold;
+        color:#4D4D4D;
+}
+#models a.model, #babies a.baby, #landscape a.landscape, #Drawings a.Drawings, #Films a.Films{
+   color: black;
+   font-weight:bold;
+   font-size: 1.2em;
+}
+#contact a.contact, #about a.about{
+   color: black;
+   font-weight:bold;
+   font-size: 1.2em;   
+}
+
+img{
+    height:100%;
+    width:100%;
+    opacity:.95;
+}
+#body2 img:hover , #bodyHome img:hover{
+    opacity:1;
+   box-shadow: 5px 5px 5px #888888;
+}
+nav h2{
+    margin-top:2em;
+    margin-left: 2em;
+    float: left;
+    font-size: 2em;
+}
+nav .menu {
+    display:none;
+}
+nav ul{
+    float:left;
+      list-style: none;
+}
+nav ul li{
+    display:block;
+    margin-bottom:.5em;
+}
+#creation{
+    font-size: 1.2em;
+}
+#creator{
+    font-size:1em;
+    opacity: .50;
+}
+
+@media screen and (min-width: 1600px){
+  .photos{
+    -webkit-column-count: 4; /* Chrome, Safari, Opera */
+    -moz-column-count: 4; /* Firefox */
+    column-count: 4;  
+    
+  }
+  #bodyHome{
+    margin-left: 13em;
+    -webkit-column-count: 6; /* Chrome, Safari, Opera */
+    -moz-column-count: 6; /* Firefox */
+    column-count: 6;
+}
+}
+
+@media screen and (min-width: 800px) and (max-width:1600){
+  .photos{
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;  
+    
+}
+#bodyHome{
+    -webkit-column-count: 5; /* Chrome, Safari, Opera */
+    -moz-column-count: 5; /* Firefox */
+    column-count: 5;
+}
+}
+
+@media screen and (min-width:700px) and (max-width:1200px){
+  .photos{
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;  
+    
+}
+    #bodyHome{
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+}
+}
+
+/* the css for the form*/
+.checkbox label, .radio label, .feedback label{
+    display:block;
+}
+.contactBox{
+    display:block;
+    margin-bottom: .5em;
+    width:80%;
+}
+.contactBox input{
+    float:right;
+    width:80%;
+}
+fieldset{
+    border-style: none;
+}
+form{
+    width:30em;
+    margin-top: 2em;
+}
+
+/* css for mobile devices */
+
+@media screen and (max-device-width: 1000px){
+#logo{
+    width:20em;
+    margin: auto;
+    float:none;
+    text-align: center;
+    margin-top: .3em;
+    }
+    #logoImg{
+        margin-top:-1.5em;
+        height:10em;
+        max-width:50%;
+    }
+    #mobileNav{
+        position:fixed;
+        background-color: whitesmoke;
+        display: none;
+        width:5em;
+        height:20em;
+        margin-top:-1.5em;
+        float: left;
+        box-shadow: 5px 5px 5px black;
+    }
+    
+  .photos{
+        margin: 0 auto;
+        text-align: center;
+        display: block;
+    }
+	
+    #video {
+	width:320px;
+	height:180px;
+	text-align:center;
+     }
+
+    #bodyHome, #about{
+        -webkit-column-count: 1;
+        -moz-column-count: 1; 
+        column-count: 1;
+        margin-left:10%;
+        margin-right: 10%;
+        margin-top: 8em;
+    }
+    #bodyHome img, #about img{
+        margin:auto;        
+        display: block;;
+        height: auto;
+        width:auto;
+        margin-bottom: 1em;
+        max-height: 100%;
+        max-width: 100%
+    }
+    #body2{
+        margin-top: 8em;
+        margin-left:10%;
+        margin-right: 10%;
+   }
+   .photos{
+        -webkit-column-count: 1;
+        -moz-column-count: 1; 
+   }
+   .photos img{
+        margin:auto;        
+        display: block;;
+        height: auto;
+        width:auto;
+        margin-bottom: 1em;
+        max-height: 100%;
+        max-width: 100%
+    }
+    nav{
+        background-color: whitesmoke;
+        top: 0px;
+        width: 100%;
+        color: whitesmoke;
+        position: fixed;
+        height: 6em;
+        opacity: .9;
+    }
+    nav .menu{
+        display:block;
+        width:4em;
+        height:4em;
+        float: left;
+        margin-top: .5em;
+    }
+    nav .menu:hover{
+        cursor: pointer; 
+	 cursor: hand; 
+    }
+    nav ul li{
+        display:block;
+        font-size: 150%;
+        border-bottom-color: black;
+        text-align: center;
+        padding: .05em;
+    }
+    nav ul{
+        float: left;
+        display: block;
+    }
+    
+    img{
+        opacity: 1;
+    }
+    #medias{
+        display:none;
+    }
+    a:hover{
+        font-weight:normal;
+    }
+    #creator {
+    font-size:1em;
+    opacity: 1;
+    padding:.05em;
+    }
+    #creation {
+    font-size:1em;
+    opacity: 1;
+    padding: .05em;
+    }
+    #creator ul{
+       margin-top:0em; 
+    }
+    #creation ul{
+        margin-bottom: 0em;
+    }
+    form{
+        margin-left: 0em;
+    }
+}
+
+
+
+
+@media screen and (max-width:700px){
+    #logo{
+    width:20em;
+    margin: auto;
+    float:none;
+    text-align: center;
+    }
+    #logoImg{
+        margin-top:-1.5em;
+        height:10em;
+        max-width:70%;
+        margin-left:-.5em;
+    }
+    #mobileNav{
+        position:fixed;
+        background-color: whitesmoke;
+        display: none;
+        width:12em;
+        height:auto;
+        margin-top:-2.2em;
+        float: left;
+        box-shadow: 5px 5px 5px black;
+    }
+    
+  .photos{
+        margin: 0 auto;
+        text-align: center;
+        display: block;
+    }
+
+
+    #bodyHome{
+        -webkit-column-count: 1;
+        -moz-column-count: 1; 
+        column-count: 1;
+        margin-left:10%;
+        margin-right: 10%;
+        margin-top: 8em;
+    }
+    #about{
+        margin-top: 8em;
+        margin-left:10%;
+        margin-right: 10%;
+        
+    }
+    #bodyHome img{
+        margin:auto;        
+        display: block;;
+        height: auto;
+        width:auto;
+        margin-bottom: 1em;
+        max-height: 100%;
+        max-width: 100%
+    }
+    #body2{
+        margin-top: 8em;
+        margin-left:10%;
+        margin-right: 10%;
+   }
+   .photos{
+        -webkit-column-count: 1;
+        -moz-column-count: 1; 
+   }
+          .photos img{
+        margin:auto;        
+        display: block;;
+        height: auto;
+        width:auto;
+        margin-bottom: 1em;
+        max-height: 100%;
+        max-width: 100%
+    }
+    nav{
+        background-color: whitesmoke;
+        top: 0px;
+        width: 100%;
+        color: whitesmoke;
+        position: fixed;
+        height: 6em;
+        opacity: .9;
+    }
+    nav .menu{
+        display:block;
+        width:4em;
+        height:4em;
+        float: left;
+        margin-top: .5em;
+    }
+    nav .menu:hover{
+        cursor: pointer; 
+	 cursor: hand; 
+    }
+    nav ul li{
+        display:block;
+        font-size: 150%;
+        border-style: solid;
+        text-align: center;
+        border-bottom-color: black;
+        padding: .05em;
+    }
+    nav ul{
+        float: left;
+        display: block;
+    }
+    
+    img{
+        opacity: 1;
+    }
+    #medias{
+        display:none;
+    }
+    a:hover{
+        font-weight:normal;
+    }
+    #creator {
+    font-size:1em;
+    opacity: 1;
+    padding:.05em;
+    }
+    #creation {
+    font-size:1em;
+    opacity: 1;
+    padding: .05em;
+    }
+    #creator ul{
+       margin-top:0em; 
+    }
+    #creation ul{
+        margin-bottom: 0em;
+    }
+    body {
+        margin-left: 0em;
+        width:100%;
+        min-width:23em;
+    }
+}
